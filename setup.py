@@ -21,5 +21,6 @@ setup(
     install_requires=[
         'click',
         'python-slugify',
+        'pathlib2;python_version<"3.5"'
     ],
 )

@@ -2,7 +2,10 @@ import os
 import sys
 import tempfile
 from datetime import datetime
-from pathlib import Path
+if sys.version_info >= (3,5):
+    from pathlib import Path
+else:
+    from pathlib2 import Path
 from subprocess import call
 
 import click
